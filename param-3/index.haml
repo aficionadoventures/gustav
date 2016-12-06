@@ -1,0 +1,12 @@
+.login
+  .login_inner
+    .login_inner__avatar
+    %input{:type => 'text', :placeholder => 'Give yourself a username', :id => 'username'}
+    %input{:type => 'email', :placeholder => 'What is your email?', :id => 'email'}
+    %input{:type => 'password', :placeholder => 'Choose a password', :id => 'password'}
+    %input{:type => 'submit', :value => 'Sign up'}
+  .login_inner__check
+    .login_inner__check--complete
+      %i{:class =>'fa fa-check'}
+.loggedin
+  %h2
