@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- Under Construction - May Break Anytime - Rito -->
+
+<!-- Contact: ritobroto@aficionadoventures.com  -->
+
+<!-- Images Used:
+
+  * Background: https://images.unsplash.com/photo-1451186859696-371d9477be93?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925
+
+  * Gustavo: http://vignette1.wikia.nocookie.net/narcos/images/9/98/Gustavo.png/revision/latest?cb=20150812191150
+
+-->
+<!-- To Do:
+  * Bootstrap CSS Positioning for Mobile: Currently breaks
+          due to multiple inheritances in the chat frame.
+          Need to look at CSS 3.0 W3C Docs to figure out
+          non-inherited properties, for vertical and horizontal
+          alignments without passing them on to children in the
+          DOM tree.
+  * Concierge Branding: Set brand concierge, and choose logo/photograph.
+          Currently using photo of Gustavo Gaviria from Narcos Wikia. 
+  * JavaScript Time-Stamp: Zero-filling in case of single digits.
+          Refer SO: http://stackoverflow.com/questions/1267283/how-can-i-create-a-zerofilled-value-using-javascript
+-->
+<html>
+
+<head>
+
+  <!-- Boring but Important Stuff -->
+  <meta charset="UTF-8">
+  <title>Aficionado Ventures: App Demonstration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Linking Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- /Stylesheets -->
+
+</head>
+
+<body>
+
+  <div class = "container">
+    <div class = "row">
+      <br><br><br><br>
+    </div>
+    <!-- Spacing Element, Essentially. Remove this once To-Do # 1
+         for CSS issue of alignment and centering is fixed. -->
+
+    <div class = "row">
+
+    <!-- Adding a Column for Responsiveness on Mobile Devices -->
+    <!-- Distribution: xs 10 sm 8 md 8 lg 8 xl 6 -->
+
+    <div class = "col-xs-10 col-sm-8 col-md-8 col-lg-8 col-xl-6">
+    
+    <!-- Chat is the encapsulating box. -->
+    <div class="chat">
+    <!-- Chat is the encapsulating box. -->
+      <div class="chat-title">
+        <!-- Chat Title: Is the Title Section of the Box -->
+        <h1>Gustavo Gaviria</h1>
+        <h2>Aficionado Concierge</h2>
+        <figure class="avatar">
+          <img src="http://vignette1.wikia.nocookie.net/narcos/images/9/98/Gustavo.png/revision/latest?cb=20150812191150" />
+        </figure>
+      </div>
+    <!-- Chat Box Title: Over -->
+
+    <!-- Messages Container -->
+      <div class="messages">
+        <div class="messages-content"></div>
+      </div>
+
+    <!-- Text Input Area -->
+      <div class="message-box">
+        <textarea type="text" class="message-input" placeholder="Chat with us!"></textarea>
+        <button type="submit" class="message-submit">Send</button>
+      </div>
+
+    </div> <!-- Chat -->
+    </div> <!-- Column -->
+
+
+  </div> <!-- Row -->
+</div> <!-- Container -->
+
+  
+  <!-- Background blur and so on. If you want to change this,
+       check the class bg in style.css -->
+  <div class="bg"></div>
+  <!-- /Background -->
+
+  <!-- Linking JavaScript -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <!-- /JavaScript -->
+
+
+</body>
+
+</html>
