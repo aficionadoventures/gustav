@@ -1,0 +1,150 @@
+@@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {box-sizing:border-box}
+html,body {height:100%}
+body {
+  background: -webkit-linear-gradient(315deg, #044f48, #2a7561);
+  background: linear-gradient(135deg, #044f48, #2a7561);
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  line-height:1;
+  min-height:580px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: url("http://www.indiedesigner.com/wp-content/uploads/2013/02/Free-Textures-design-012.jpg") no-repeat 0 0;
+  -webkit-filter: blur(80px);
+          filter: blur(80px);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+h1 {
+  color: #2ecc71;
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+.wrapper {
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  background-color: white;
+  width: 600px;
+  margin: 40px auto;
+  padding: 20px 40px;
+  z-index:2;
+}
+.field-wrap {
+  padding: 20px 0;
+  border-top: 1px solid #f2f2f2;
+  overflow: hidden;
+}
+.field-wrap:hover {
+  cursor: pointer;
+}
+.field-wrap:hover p {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+.field-wrap:hover .checkbox {
+  border-color: #2ecc71;
+}
+.field-wrap:first-child {
+  border-top: 0;
+}
+.field-wrap p {
+  float: left;
+  margin-left: 10px;
+  line-height: 30px;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+.checkbox {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  position: relative;
+  cursor: pointer;
+}
+.checkbox:before {
+  content: "";
+  position: absolute;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  border-radius: 15px;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  background-color: #2ecc71;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+.checkbox.checked {
+  border-color: #2ecc71;
+}
+.checkbox.checked:before {
+  width: 10px;
+  height: 10px;
+}
+.select {
+  padding: 20px 0;
+  border-top: 1px solid #f2f2f2;
+  position: relative;
+}
+.select.open > li > ul {
+  display: block;
+}
+.select .select-toggle {
+  border: 1px solid #29b765;
+  background-color: #2ecc71;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 50px;
+}
+.select > li {
+  list-style: none;
+}
+.select > li > ul {
+  z-index: 2;
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.select > li > ul > li {
+  width: 200px;
+  list-style: none;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.select > li > ul > li:first-child {
+  border-top: 0;
+}
+.select > li > ul > li:hover {
+  background-color: #2ecc71;
+  color: white;
+}
